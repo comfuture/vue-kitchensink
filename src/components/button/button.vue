@@ -12,7 +12,7 @@ export default class UiButton extends Vue {
     private primary: boolean = false;
 }
 </script>
-<style>
+<style lang="postcss">
 button.ui, .ui.button {
   @apply bg-gray-500 px-2 py-4 rounded font-semibold;
 
