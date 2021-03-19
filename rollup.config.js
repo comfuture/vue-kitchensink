@@ -25,7 +25,11 @@ export default {
   plugins: [
     peerDepsExternal(),
     resolve(),
-    vue(),
+    vue({
+      template: {
+        optimizeSSR: true
+      }
+    }),
     postcss(),
     commonjs(),
     typescript()
